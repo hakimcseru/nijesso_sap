@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans');
 @import url('https://fonts.googleapis.com/css?family=Atma:700');
-body{
+/* body{
     padding: 0px;
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
     background-color: #F1ED62;
-}
+} */
 ul{
     margin: 0;
     padding: 0;
@@ -279,3 +279,500 @@ ul{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+/* Naim card choose CSS Section Start */
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.main-wrapper{
+    width: 100%;
+    display:inline-block;
+}
+
+/* header start */
+.header_top{
+    border-bottom: .5px solid #AEAEAE;
+    overflow: hidden;
+    background-color: ;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #F1ED62;
+}
+
+.logo_img{
+    width: 60px;
+    display: inline-block;
+    margin: 0 0 0 3vw;
+    position: relative;
+}
+.logo_img img{
+    width: 100%;
+    min-width: 50px;
+}
+.header_top_right{
+    float: right;
+    margin: .5vw 1vw 0 0;
+}
+.header_font {
+    display: inline-block;
+    margin: 0px 12px 0px 2px;
+    font-size: 20px;
+    color: #AEAEAE;
+}
+.header_font a {
+    color: #AEAEAE;
+}
+.header_sign{
+    display: inline-block;
+    font-size: 20px;
+}
+.header_sign a{
+    text-decoration: none;
+    color: #AEAEAE;
+    font-size: 15px;
+}
+.header_sign  span{
+    margin: 0 .5vw;
+    color: #aeaeae8f;
+    font-size: 15px;
+}
+.header_bottom nav ul {
+    float: right;
+    margin: 0;
+}
+.header_bottom nav ul li{
+    border: 1px solid #089292;
+    display: inline-block;
+    padding: .5vw;
+    margin: .5vw;
+    cursor: pointer;
+}
+.header_bottom nav ul li a{
+    text-decoration: none;
+    font-size: 1vw;
+    color: #666;
+    display: block;
+}
+.header_bottom nav ul  li a i {
+    margin: 0 0 0 8px;
+}
+ .header_bottom nav ul li.active {
+   background-color: #089292;
+}
+ .header_bottom nav ul li.active a {
+    color: #fff;
+}
+ .header_bottom nav ul li:hover {
+    background: #089292;
+}
+.header_bottom nav ul li:hover a {
+    color: #fff;
+}
+.toggle{
+    padding: 0.4vw 2vw;
+    background: #fff3f3;
+    text-align: right;
+    box-sizing: border-box;
+    color: #AEAEAE;
+    font-size: 4vw;
+    display: none;
+    float: left;
+    left: 1vw;
+    top: 4vw;
+    position: absolute;
+}
+
+/* submit button start */
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/* submit button end */
+    
+@media only screen and (max-width: 375px) {
+    
+}
+
+.second-section{
+    display: grid;
+    grid-template-columns: auto;
+}
+.second-section h1{
+    color: red;
+    margin: 0;
+}
+.template-section{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-gap: 5px;
+}.first-section{
+    display: grid;
+    grid-template-columns: 30% 20% 50%;
+    grid-gap: 10px;
+}
+.text-graw{
+    width: 100%;
+    height: 255px;
+    background-color: #867b7b;
+    margin-top: 10px;
+}
+.text-graw-one{
+    margin-top: 10px;
+}
+.text-one h1{
+    color: red;
+    border: 2px solid;
+    text-align: center;
+    margin-top: 10px;
+}
+.text-two h3{
+    text-align: center;
+}
+.text-three h1{
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.second-img img{
+    width: 78%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second-section{
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 60px;
+}
+.second-section h1{
+    color: #bdb3bb;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #0f3a3a;
+    border-radius: 4px;
+}
+.template-section{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-gap: 5px;
+}
+.template-section img{
+    width: 100%;
+    display: block;
+}
+.img1, .img2, .img3, .img4, .img5{
+    display: grid;
+    grid-template-columns: auto;
+}
+.template-section img{
+    width: 100%;
+    display: block;
+}
+.img1 h5, .img2 h5, .img3 h5, .img4 h5, .img5 h5{
+    float: right;
+}
+.pagination{
+    display: grid;
+    grid-template-columns: auto;
+    display: inline-block;
+}
+.pagination-main{
+    text-align: center;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+@media only screen and (max-width: 375px) {
+    .first-section{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .template-section{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .pagination{
+        display: grid;
+        grid-template-columns: auto;
+        display: inline-block;
+    }
+    .font-menu-bar{
+        display: none !important;
+    }
+    .toggle{
+        display:block; 
+    }  
+    .active{
+        display: block !important;
+    } 
+    .header_bottom nav ul li {
+        padding: 8px 4px;
+        float: left;
+    }
+    .header_bottom nav ul li a{
+        font-size: 6px;
+    }
+    .logo_img {
+        margin: 0 0 0 10vw;
+    }
+    .header_sign {
+        font-size: 15px;
+    }
+    .header_bottom nav ul {
+        float: none;
+    }
+}
+/* Naim card choose CSS Section end */
+/* Naim card data Entry CSS Section Start */
+.header_top{
+    border-bottom: .5px solid #AEAEAE;
+    overflow: hidden;
+    background-color: ;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.logo_img{
+    width: 60px;
+    display: inline-block;
+    margin: 0 0 0 3vw;
+    position: relative;
+}
+.logo_img img{
+    width: 100%;
+    min-width: 50px;
+}
+.header_top_right{
+    float: right;
+    margin: .5vw 1vw 0 0;
+}
+.header_font {
+    display: inline-block;
+    margin: 0px 12px 0px 2px;
+    font-size: 20px;
+    color: #AEAEAE;
+}
+.header_font a {
+    color: #AEAEAE;
+}
+.header_sign{
+    display: inline-block;
+    font-size: 20px;
+}
+.header_sign a{
+    text-decoration: none;
+    color: #AEAEAE;
+    font-size: 15px;
+}
+.header_sign  span{
+    margin: 0 .5vw;
+    color: #aeaeae8f;
+    font-size: 15px;
+}
+.header_bottom nav ul {
+    float: right;
+    margin: 0;
+}
+.header_bottom nav ul li{
+    border: 1px solid #089292;
+    display: inline-block;
+    padding: .5vw;
+    margin: .5vw;
+    cursor: pointer;
+}
+.header_bottom nav ul li a{
+    text-decoration: none;
+    font-size: 1vw;
+    color: #666;
+    display: block;
+}
+.header_bottom nav ul  li a i {
+    margin: 0 0 0 8px;
+}
+ .header_bottom nav ul li.active {
+   background-color: #089292;
+}
+ .header_bottom nav ul li.active a {
+    color: #fff;
+}
+ .header_bottom nav ul li:hover {
+    background: #089292;
+}
+.header_bottom nav ul li:hover a {
+    color: #fff;
+}
+.toggle{
+    padding: 0.4vw 2vw;
+    background: #fff3f3;
+    text-align: right;
+    box-sizing: border-box;
+    color: #AEAEAE;
+    font-size: 4vw;
+    display: none;
+    float: left;
+    left: 1vw;
+    top: 4vw;
+    position: absolute;
+}
+
+.first-section{
+    display: grid;
+    grid-template-columns: 30% 20% 50%;
+    grid-gap: 10px;
+    margin-top: 60px;
+}
+.text-graw{
+    width: 100%;
+    height:250px;
+    background-color: #348253;
+    border-radius: 4px;
+}
+.text-graw-one{
+    width: 100%;
+    height: 250px;
+    background-color: #348253;
+    border-radius: 4px;
+}
+.text-one h1{
+    color: red;
+    border: 2px solid;
+    text-align: center;
+    margin-top: 10px;
+}
+.logo_uploar_bt {
+    margin-top: 50%;
+    margin-left: 24%;
+}
+.text-graw-one h3{
+    color: rgb(234, 220, 224);
+    text-align: center;
+    margin: auto;
+}
+.text-three h1{
+    color: #400b3e;
+    text-align: center;
+    margin: 0;
+}
+.second-img img{
+    width: 78%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* submit button start */
+.button {
+    background-color: #00132fe0;
+    border: none;
+    color: white;
+    padding: 11px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    transition-duration: .4s;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+input[type=text], select, textarea {
+    width: 76%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+#fname1{
+    margin-left: 33px;
+}
+#fname3{
+    margin-left: 9px;
+}
+#fname4{
+    margin-left: 25px;
+}
+
+/* submit button end */
+
+
+@media only screen and (max-width: 375px) {
+    .first-section{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .template-section{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .pagination{
+        display: grid;
+        grid-template-columns: auto;
+        display: inline-block;
+    }
+    .font-menu-bar{
+        display: none !important;
+    }
+    .toggle{
+        display:block; 
+    }  
+    .active{
+        display: block !important;
+    } 
+    .header_bottom nav ul li {
+        padding: 8px 4px;
+        float: left;
+    }
+    .header_bottom nav ul li a{
+        font-size: 6px;
+    }
+    .logo_img {
+        margin: 0 0 0 10vw;
+    }
+    .header_sign {
+        font-size: 15px;
+    }
+    .header_bottom nav ul {
+        float: none;
+    }
+}
+/* Naim card data Entry CSS Section end */
