@@ -1,168 +1,51 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans');
 @import url('https://fonts.googleapis.com/css?family=Atma:700');
 body{
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #F1ED62;
+	margin:0;
+	padding:0;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    
 }
-ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+.section-all{
+    height: calc(100vh-14em);
+    scale-snap-align:start;
 }
-.main-wrapperA{
-    width: 100%;
-    background: #F1ED62;
-    display:inline-block;
-}
-.main-wrapperB{
-    width: 100%;
-    background: #F1ED62;
-    display:inline-block;
-}
-
-/* animation test */
-.anim-three-wrapper{
-    padding: 0 10%;
-}
-.steps{
+.home-section{
     display:grid;
     width:100%;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px ;
+    grid-template-columns: auto auto;
+    grid-gap: 0 2vw ;
+    padding: 0 6vw;
+    box-sizing: border-box;
 }
-.anim-wrapp{
+/* .video-section{
+    width: 90%;
+}
+.video-section video{
     width: 100%;
-    position: relative;
-    display: block;
-    margin: 20px 0;
+} */
+.main-botton{
+    width: 90%;
+    margin: 20px auto;
     padding: 40px;
-    box-sizing: border-box;
-}
-.anim-wrapp:before,.anim-wrapp:after{
-    content: "";
-    width: 100%;
-    display: block;
-}
-.anim-wrapp:after{
-    clear: both;
-}
-
-.anim-three-wrapper .steps .step_item:nth-child(1) .anime {
-    background-image: url(../images/step1_anime.png);
-}
-.anim-three-wrapper .steps .step_item:nth-child(2) .anime {
-    background-image: url(../images/step2_anime.png);
-}
-.anim-three-wrapper .steps .step_item:nth-child(3) .anime {
-    background-image: url(../images/step3_anime.png);
-}
-.step_item {
-    /* height: 22.00vw; */
-    height: 47.66vh;
-    width: 100%;
-    float: left;
-    position: relative;
-    background: #fff;
-    box-sizing: border-box;
-}
-.anim-three-wrapper .steps .step_item .anime {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-    background-position: top left;
-    background-size: cover;
-    -webkit-animation: anime_gif 1s steps(1) infinite;
-    animation: anime_gif 1s steps(1) infinite;
-}
-.anim-three-wrapper .steps .step_item .anime:after{
-    content: '';
-    width: 100%;
-    padding-top: 84.34%;
-}
-@keyframes anime_gif{
-    0%,100%{
-        background-position:top left;
-        }
-    50%{
-        background-position:bottom left;
-    }
-}
-
-
-
-
-.step_item p{
-    margin: 0;
-    padding: 84% 0px 6% 10%;
-    background-color: white;
-}
-.main-header h2{
-    text-align: center;
-    font-size: 3vw;
-    color: #153940;
-    font-family: Atma;
-}
-.show{
-    margin: 8% 0 0 0;
+    background:#fff ;
     cursor: pointer;
-    text-align: center
 }
-.arrow{
-     width: 2%;
-     margin: 0 auto;
-     position: relative;
-     top: 0;
-     -webkit-animation: floatBubble 1s infinite  ease-in-out forwards;
-     animation: floatBubble 1s infinite  ease-in-out forwards;
-}
-@-webkit-keyframes floatBubble {
-    0% {
-        top:0px;
-    }
-    50% {
-        top: 10px;
-    }
-    100% {
-        top: 0px;
-    }
-}
-@keyframes floatBubble {
-    0% {
-        top:0px;
-    }
-    50% {
-        top: 10px;
-    }
-    100% {
-        top: 0px;
-    }
-}
-.arrow img{
-    width: 100%;
-}
-.txt{
-    padding-top: 30px;
-    font-size: 30px;
-    color: #fff;
-    font-weight: bold;
-}
-.sub-header h2{
-    text-align: center;
-    color: #153940;
-    padding-top: 25px;
-    font-size: 40px;
-    font-family: Atma;
-
+.main-botton:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+    cursor: pointer;
+    transition: transform .2s;
 }
 
-.toggle{
+.video-section a{
+    text-decoration: none;
+    color: #3b3a39;
+  }
+/* menu start */
+.font-toggle{
     padding: 0.4vw 2vw;
     box-sizing: border-box;
     color: #153940;
@@ -170,6 +53,13 @@ ul{
     right: 0;
     position: fixed;
     cursor: pointer;
+}
+.font-toggle:hover{
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); 
+    cursor: pointer;
+    transition: transform .2s;
 }
 .font-menu-bar{
     display: none;
@@ -186,61 +76,6 @@ ul{
 .active{
     display:block;
 }
-@media only screen and (max-width: 768px){
-    
-   
-    .steps{
-        display:grid;
-        width:100%;
-        grid-template-columns:auto;
-        grid-gap: 10px ;
-    }
-    .step_item {
-        height: 67.55vw;
-        width: 100%;
-        float: left;
-        position: relative;
-        background: #fff;
-        box-sizing: border-box;
-    }
-    .anim-three-wrapper .steps .step_item .anime {
-        position: absolute;
-        right:0;
-        top: 0;
-        height: 50%;
-        width: 50%;
-        -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-        order: 1;
-        background-position: top left;
-        background-size: cover;
-        -webkit-animation: anime_gif 1s steps(1) infinite;
-        animation: anime_gif 1s steps(1) infinite;
-    }
-    .step_item p {
-        display: inline;
-        float: right;
-        padding: 6% 0px 0% 4%;
-      
-    }
-}
-
-
-
-.font-toggle{
-    font-size: 40px;
-    cursor:pointer;
-    margin-right: 2vw;
-    position: fixed;
-    right: 0;
-    color: #153940;
-    top: 10%;
-}
-/* .font-toggle:hover{
-    font-size: 50px;
-    margin-right: 1vw;
- 
-} */
 .sidenav {
     height: 100%;
     width: 0;
@@ -274,8 +109,153 @@ ul{
     font-size: 36px;
     margin-left: 50px;
 }
+.last-show{
+    margin-top: 30px;  
+     -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+  
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+/* main end */
+.step_item:nth-child(1) .anime {
+    background-image: url(../img/step1_anime.png) !important;
+}
+.step_item:nth-child(2) .anime {
+    background-image: url(../img/step2_anime.png) !important;
+}
+.step_item:nth-child(3) .anime {
+    background-image: url(../img/step3_anime.png) !important;
+}
+
+.show-more{
+    width: 14%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #3b3a39;
+    cursor: pointer;
+}
+.show-more:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+    cursor: pointer;
+    transition: transform .2s;
+}
+.show-more-a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-header h2 {
+    text-align: center;
+    font-size: 3vw;
+    color: #153940;
+    font-family: Atma;
+    margin: 46px;
+}
+.t-shart-header h2 {
+    text-align: center;
+    font-size: 2.5vw;
+    color: #153940;
+    font-family: Atma;
+    margin: 0 0 3vw 0;
+}
+.arrow{
+    width: 2%;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    -webkit-animation: floatBubble 1s infinite  ease-in-out forwards;
+    animation: floatBubble 1s infinite  ease-in-out forwards;
+}
+@-webkit-keyframes floatBubble {
+   0% {
+       top:0px;
+   }
+   50% {
+       top: 10px;
+   }
+   100% {
+       top: 0px;
+   }
+}
+@keyframes floatBubble {
+   0% {
+       top:0px;
+   }
+   50% {
+       top: 10px;
+   }
+   100% {
+       top: 0px;
+   }
+}
+.arrow img{
+   width: 100%;
+}
+
+/* footer start */
+
+#footer-section{
+    background: #2A2A2A;
+}
+.footer-fast{
+    text-align: center;
+  
+
+}
+.footer-fast ul{
+    font-size: 1vw;
+}
+.footer-fast ul li{
+    display: inline-block;
+    margin: 10px;
+    border-right: 1px solid;
+    color: #fff;
+}
+.footer-fast ul li a{
+    text-decoration: none;
+    margin: 0 3vw 3vw;
+    color: #fff;
+
+}
+.footer-seand{
+    display:grid;
+    width:100%;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0 2vw ;
+    padding: 0 6vw;
+    box-sizing: border-box;
+}
+.footer-text {
+    color: #fff;
+}
+.footer-text p {
+    color: #89E0F2;
+    font-size: 20px;
+    margin: .5vw 0;
+}
+.footer-text ul{
+    float: left;
+ }
+.footer-text a{
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    margin: .2vw;
+}
+.footer-text i{
+    line-height: 33px;
+    margin: 0 0 0 1vw;
+}
+
+
+/* footer end */
