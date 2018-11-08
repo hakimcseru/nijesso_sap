@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>nijesso sap</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/churi.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
     <link rel="stylesheet" href="web-fonts/css/fontawesome-all.min.css"/> 
 </head>
 <header>
@@ -19,7 +19,7 @@
             <a href="#">ক্লায়েন্টদের মধ্যে</a>
             <a href="#">যোগাযোগ</a>
         </div>
-        <div class="font-toggle" onclick="openNav()"><i class="fas fa-bars"></i></div>
+        <div class="font-toggle" onclick="openNav()">&times;</div>
         
     </nav>
 
@@ -28,6 +28,10 @@
   <main id="container"> 
     <section class="header">
       <div class="header-top"></div>
+      <div class="square-section circle">
+          <span id="test" class="text"><noscript>YOUR DESING HEAR </noscript></span>
+      </div>
+     
         <div class="menu-buttom">
           <a href="#sec1_make"><div class="main-botton">টি-শার্ট ডিজাইন</div></a>
           <a href="#sec2_join"><div class="main-botton">বিজনেস কার্ড ডিজাইন</div></a>
@@ -242,5 +246,48 @@
       gtag('js', new Date());
       gtag('config', 'UA-127683739-1');
    </script>
+
+
+<!-- type section -->
+<script>
+function randomIntFromInterval(min,max)
+{
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+function typeWrite(span){
+  $('#'+span).addClass('cursor')
+  var text = $('#'+span).text();
+  var randInt = 0
+  for (var i = 0; i < text.length; i++) {
+    randInt += parseInt(randomIntFromInterval(40,300));
+    var typing = setTimeout(function(y){
+      $('#'+span).append(text.charAt(y));
+    },randInt, i);
+  };
+  setTimeout(function(){
+    $('#'+span).removeClass('cursor');
+  },randInt+2500);
+}
+
+$(document).ready(function(){
+  typeWrite('test');
+});
+
+</script>
+<!-- time -->
+ <script>
+    var rayhan = $( ".circle" );
+     
+    function runIt() {
+      rayhan
+        .show( "20s" )
+        .animate({ left: "1020" }, 4000 )
+        .animate({ top: "440" }, 2000 )
+    }
+    
+    runIt();
+    </script> 
+     
 </body>
 </html>
